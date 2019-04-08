@@ -1,0 +1,22 @@
+{
+  "name": "convert-seconds",
+  "version": "0.0.1",
+  "description": "Convert seconds into Y/D/H/M/S, in calendar and astronomical format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [
+    "human",
+    "format",
+    "duration",
+    "years",
+    "days",
+    "hours",
+    "minutes",
+    "seconds"
+  ],
+  "author": "Romain Lt",
+  "license": "ISC"
+}
