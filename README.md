@@ -3,18 +3,18 @@ Convert seconds into Y/D/H/M/S, in calendar and astronomical format.
 
 To install the package :
 ```
-npm i convert-seconds
+npm i convert-seconds-to-human
 ```
 
 Remember to require the package :
 ```
-const convert = require('convert-seconds')
+const convert = require('convert-seconds-to-human')
 ```
 
 ## Examples
 First example with ```cal``` format
 ```javascript
-const convert = require('convert-seconds')
+
 
 const resultAstr = convert(356000, 'cal')
 
