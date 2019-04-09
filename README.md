@@ -14,8 +14,6 @@ const convert = require('convert-seconds-to-human')
 ## Examples
 First example with ```cal``` format
 ```javascript
-
-
 const resultCal = convert(356000, 'cal')
 
 console.log(resultCal)
