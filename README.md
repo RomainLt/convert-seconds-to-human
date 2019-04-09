@@ -16,9 +16,9 @@ First example with ```cal``` format
 ```javascript
 
 
-const resultAstr = convert(356000, 'cal')
+const resultCal = convert(356000, 'cal')
 
-console.log(resultAstr)
+console.log(resultCal)
 
 /* result :  { 
     years: 39, 
@@ -31,9 +31,9 @@ console.log(resultAstr)
 
 Second example with ```astr``` format
 ```javascript
-const resultCal = convert(356000, 'astr')
+const resultAstr = convert(356000, 'astr')
 
-console.log(resultCal)
+console.log(resultAstr)
 
 /* result :  { 
     years: 39, 
