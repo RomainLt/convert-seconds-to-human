@@ -1,4 +1,4 @@
-# convert-seconds
+# Help
 Convert seconds into Y/D/H/M/S, in calendar and astronomical format.
 
 To install the package :
