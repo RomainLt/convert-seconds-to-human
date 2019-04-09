@@ -1,6 +1,6 @@
 {
   "name": "convert-seconds-to-human",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert seconds into Y/D/H/M/S, in calendar and astronomical format",
   "main": "index.js",
   "scripts": {
