@@ -4,7 +4,7 @@
   "description": "Convert seconds into Y/D/H/M/S, in calendar and astronomical format",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ava",
     "start": "node ."
   },
   "keywords": [
@@ -18,5 +18,8 @@
     "seconds"
   ],
   "author": "Romain Lt",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^1.4.1"
+  }
 }
