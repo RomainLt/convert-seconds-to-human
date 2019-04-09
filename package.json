@@ -1,11 +1,16 @@
 {
-  "name": "convert-seconds",
+  "name": "convert-seconds-to-human",
   "version": "0.0.1",
   "description": "Convert seconds into Y/D/H/M/S, in calendar and astronomical format",
   "main": "index.js",
   "scripts": {
     "test": "ava",
     "start": "node ."
+  },
+  "homepage": "https://github.com/RomainLt/convert-seconds-to-human#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainLt/convert-seconds-to-human.git"
   },
   "keywords": [
     "human",
