@@ -14,30 +14,29 @@ const convert = require('convert-seconds-to-human')
 ## Examples
 First example with ```cal``` format
 ```javascript
-const resultCal = convert(356000, 'cal')
+const resultCal = convert(123456789, 'cal')
 
 console.log(resultCal)
-
-/* result :  { 
-    years: 39, 
-    days: 53, 
-    hours: 23, 
-    minutes: 31, 
-    seconds: 30
+/* result :  {
+    years: 3,
+    days: 333,
+    hours: 21,
+    minutes: 33,
+    seconds: 9
 }*/
 ```
 
 Second example with ```astr``` format
 ```javascript
-const resultAstr = convert(356000, 'astr')
+const resultAstr = convert(123456789, 'astr')
 
 console.log(resultAstr)
 
-/* result :  { 
-    years: 39, 
-    days: 44, 
-    hours: 5, 
-    minutes: 31, 
-    seconds: 30
+/* result :  {
+    years: 3,
+    days: 333,
+    hours: 3,
+    minutes: 33,
+    seconds: 9
 }*/
 
