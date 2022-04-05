@@ -1,98 +1,134 @@
 const test = require('ava')
 const convert = require('../src/convert')
 
-test('oneSecondDuration', t => {
+test('one second', t => {
   const res = convert(1, 'cal')
   const obj = {
-    seconds: 1,
-    minutes: 0,
-    hours: 0,
+    years: 0,
     days: 0,
-    years: 0
+    hours: 0,
+    minutes: 0,
+    seconds: 1
   }
   t.deepEqual(obj, res)
 })
 
-test('oneMinuteDuration', t => {
+test('one minute', t => {
   const res = convert(60, 'cal')
   const obj = {
-    seconds: 0,
-    minutes: 1,
-    hours: 0,
+    years: 0,
     days: 0,
-    years: 0
+    hours: 0,
+    minutes: 1,
+    seconds: 0
   }
   t.deepEqual(obj, res)
 })
 
-test('oneHourDuration', t => {
+test('one minute and one second', t => {
+  const res = convert(61, 'cal')
+  const obj = {
+    years: 0,
+    days: 0,
+    hours: 0,
+    minutes: 1,
+    seconds: 1
+  }
+  t.deepEqual(obj, res)
+})
+
+test('one hour', t => {
   const res = convert(3600, 'cal')
   const obj = {
-    seconds: 0,
-    minutes: 0,
-    hours: 1,
+    years: 0,
     days: 0,
-    years: 0
+    hours: 1,
+    minutes: 0,
+    seconds: 0
   }
   t.deepEqual(obj, res)
 })
 
-test('oneDayDurationCal', t => {
+test('one hour and one second', t => {
+  const res = convert(3601, 'cal')
+  const obj = {
+    years: 0,
+    days: 0,
+    hours: 1,
+    minutes: 0,
+    seconds: 1
+  }
+  t.deepEqual(obj, res)
+})
+
+test('one day', t => {
   const res = convert(86400, 'cal')
   const obj = {
-    seconds: 0,
-    minutes: 0,
-    hours: 0,
+    years: 0,
     days: 1,
-    years: 0
+    hours: 0,
+    minutes: 0,
+    seconds: 0
   }
   t.deepEqual(obj, res)
 })
 
-test('oneYearDurationCal', t => {
+test('one day and one second', t => {
+  const res = convert(86401, 'cal')
+  const obj = {
+    years: 0,
+    days: 1,
+    hours: 0,
+    minutes: 0,
+    seconds: 1
+  }
+  t.deepEqual(obj, res)
+})
+
+test('one year (cal)', t => {
   const res = convert(31536000, 'cal')
   const obj = {
-    seconds: 0,
-    minutes: 0,
-    hours: 0,
+    years: 1,
     days: 0,
-    years: 1
+    hours: 0,
+    minutes: 0,
+    seconds: 0
   }
   t.deepEqual(obj, res)
 })
 
-test('oneYearDurationAstr', t => {
+test('one year (astr)', t => {
   const res = convert(31557600, 'astr')
   const obj = {
-    seconds: 0,
-    minutes: 0,
-    hours: 0,
+    years: 1,
     days: 0,
-    years: 1
+    hours: 0,
+    minutes: 0,
+    seconds: 0
   }
   t.deepEqual(obj, res)
 })
 
-test('finalTestCal', t => {
+test('final test (cal)', t => {
   const res = convert(88888888, 'cal')
   const obj = {
-    seconds: 28,
-    minutes: 21,
-    hours: 19,
+    years: 2,
     days: 298,
-    years: 2
+    hours: 19,
+    minutes: 21,
+    seconds: 28
   }
   t.deepEqual(obj, res)
 })
 
-test('finalTestAstr', t => {
+test('final test (astr)', t => {
   const res = convert(88888888, 'astr')
   const obj = {
-    seconds: 28,
-    minutes: 21,
-    hours: 7,
+    years: 2,
     days: 298,
-    years: 2
+    hours: 7,
+    minutes: 21,
+    seconds: 28
   }
   t.deepEqual(obj, res)
 })
