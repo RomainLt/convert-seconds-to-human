@@ -25,6 +25,6 @@
   "author": "Romain Lt",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^1.4.1"
+    "ava": "^5.2.0"
   }
 }
